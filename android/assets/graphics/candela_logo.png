@@ -1,0 +1,16 @@
+ assertUnhooked() {
+        assert.strictEqual(hookCounts.rootHook, 1)
+        assert.strictEqual(hookCounts.childHookA, 1)
+        assert.strictEqual(hookCounts.childHookB, 1)
+        assert.strictEqual(hookCounts.childHookC, 1)
+        assert.strictEqual(hookCounts.thunkyRootHook, 1)
+        assert.strictEqual(hookCounts.thunkyChildHookA, 1)
+        assert.strictEqual(hookCounts.thunkyChildHookB, 1)
+        assert.strictEqual(hookCounts.thunkyChildHookC, 1)
+        assert.strictEqual(unhookCounts.rootHook, 1)
+        assert.strictEqual(unhookCounts.childHookA, 1)
+        assert.strictEqual(unhookCounts.childHookB, 1)
+        assert.strictEqual(unhookCounts.childHookC, 1)
+        assert.strictEqual(unhookCounts.thunkyRootHook, 1)
+        assert.strictEqual(unhookCounts.thunkyChildHookA, 1)
+        assert.strictEqual(unhookCounts.t
